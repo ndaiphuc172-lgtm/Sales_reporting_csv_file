@@ -1,57 +1,56 @@
-# Sales Reporting 2019 - Python Mini Project
+# Sales Reporting 2019 — Python Mini Project
 
-Ph�n t�ch 12 file d? li?u b�n h�ng nam 2019 nh?m d�nh gi� doanh thu, th?i di?m d?t h�ng v� xu hu?ng mua s?n ph?m c�ng nhau.
+Phân tích 12 file dữ liệu bán hàng năm 2019 nhằm đánh giá doanh thu, thời điểm đặt hàng và xu hướng mua sản phẩm cùng nhau.
 
-## C?u tr�c repo
+## Cấu trúc repo
 
-| Du?ng d?n | N?i dung |
+| Đường dẫn | Nội dung |
 |---|---|
-| `data/sales2019_1.csv` d?n `data/sales2019_12.csv` | 12 CSV d? li?u g?c |
-| `report.ipynb` | Notebook d?c l?p, ch?a d?y d? ma x? ly, ph�n t�ch v� bi?u d? da ch?y |
-| `README.md` | Hu?ng d?n, k?t qu? v� quy t?c t�nh |
+| `data/sales2019_1.csv` đến `data/sales2019_12.csv` | 12 CSV dữ liệu gốc |
+| `report.ipynb` | Notebook độc lập, chứa đầy đủ mã xử lý, phân tích và biểu đồ đã chạy |
+| `README.md` | Hướng dẫn, kết quả và quy tắc tính |
 
-## C�ch ch?y
+## Cách chạy
 
-1. T?i ho?c clone to�n b? repo.
-2. M? thu m?c repo b?ng VS Code, c�i extension Python v� Jupyter n?u chua c�.
-3. M? `report.ipynb`, ch?n Python 3.10 tr? l�n v� nh?n **Run All**. Thu m?c l�m vi?c c?n l� thu m?c g?c repo, noi c� `data/`.
-4. Sau khi ch?y, m? `outputs/report.html` d? xem b�o c�o d?y d?. B?ng t?ng h?p n?m t?i `outputs/tables/`, d? li?u s?ch t?i `outputs/data/`.
+1. Tải hoặc clone toàn bộ repo.
+2. Mở thư mục repo bằng VS Code, cài extension Python và Jupyter nếu chưa có.
+3. Mở `report.ipynb`, chọn Python 3.10 trở lên và nhấn **Run All**. Thư mục làm việc cần là thư mục gốc repo, nơi có `data/`.
+4. Sau khi chạy, mở `outputs/report.html` để xem báo cáo đầy đủ. Bảng tổng hợp nằm tại `outputs/tables/`, dữ liệu sạch tại `outputs/data/`.
 
-Notebook d�ng thu vi?n chu?n Python d? x? ly d? li?u v� t?o bi?u d? SVG. K?t qu? v� bi?u d? da du?c luu trong notebook d? c� th? xem tr?c ti?p tr�n GitHub.
+Notebook dùng thư viện chuẩn Python để xử lý dữ liệu và tạo biểu đồ SVG. Kết quả và biểu đồ đã được lưu trong notebook để có thể xem trực tiếp trên GitHub.
 
-## C�u h?i v� k?t qu?
+## Câu hỏi và kết quả
 
-| C�u h?i kinh doanh | K?t qu? nam 2019 |
+| Câu hỏi kinh doanh | Kết quả năm 2019 |
 |---|---|
-| Th�ng c� doanh thu cao nh?t? | Th�ng 12: **4.613.443,34 USD** |
-| Th�nh ph? c� doanh thu cao nh?t? | San Francisco (CA): **8.259.719,03 USD** |
-| Gi? c� nhi?u don d?t h�ng nh?t? | **19:00**, k? d?n **12:00** v� **11:00** |
-| C?p s?n ph?m thu?ng mua c�ng nhau nh?t? | Lightning Charging Cable + iPhone: **1.010 don** |
-| S?n ph?m b�n nhi?u nh?t theo s? lu?ng? | AAA Batteries (4-pack): **31.012 s?n ph?m** |
+| Tháng có doanh thu cao nhất? | Tháng 12: **4.613.443,34 USD** |
+| Thành phố có doanh thu cao nhất? | San Francisco (CA): **8.259.719,03 USD** |
+| Giờ có nhiều đơn đặt hàng nhất? | **19:00**, kế đến **12:00** và **11:00** |
+| Cặp sản phẩm thường mua cùng nhau nhất? | Lightning Charging Cable + iPhone: **1.010 đơn** |
+| Sản phẩm bán nhiều nhất theo số lượng? | AAA Batteries (4-pack): **31.012 sản phẩm** |
 
-T?ng doanh thu: **34.483.365,68 USD**; s? don: **178.406**; s? lu?ng b�n: **209.038 s?n ph?m**; s? d�ng s?n ph?m trong nam: **185.916**.
+Tổng doanh thu: **34.483.365,68 USD**; số đơn: **178.406**; số lượng bán: **209.038 sản phẩm**; số dòng sản phẩm trong năm: **185.916**.
 
-## Phuong ph�p v� ch?t lu?ng d? li?u
+## Phương pháp và chất lượng dữ liệu
 
-- D?c d? 12 CSV; ki?m tra t�n c?t, d? li?u thi?u, s? lu?ng/gi�, ng�y gi? v� d?a ch?.
-- 186.850 d�ng d?u v�o g?m 545 d�ng tr?ng, 355 ti�u d? l?p v� 185.950 d�ng h?p l?.
-- C� 34 d�ng thu?c nam 2020: gi? trong d? li?u s?ch, lo?i kh?i KPI nam 2019 theo ng�y d?t h�ng th?c t?.
-- Gi? v� d�nh d?u 264 d�ng tr�ng ho�n to�n v� chua c� kh�a d�ng don d? x�c nh?n d� l� l?i.
-- Doanh thu = s? lu?ng x don gi�; t�nh ti?n b?ng **cent nguy�n** d? tr�nh sai s? s? th?c. C�c c?t `_cents` trong b?ng CSV c?n chia 100 d? d?i sang USD.
-- S? don l� s? Order ID duy nh?t, kh�ng ph?i s? d�ng. M?t ma don c� th? ch?a nhi?u s?n ph?m.
-- Th�nh ph? di k�m bang d? t�ch Portland (OR) v� Portland (ME).
-- M?i c?p s?n ph?m kh�c nhau t�nh t?i da m?t l?n trong m?t don; b? sung support, confidence v� lift.
-- Ki?m tra d?i so�t: doanh thu theo th�ng, th�nh ph?, gi? v� s?n ph?m d?u b?ng t?ng nam; s? don theo th�ng v� gi? b?ng t?ng s? don.
+- Đọc đủ 12 CSV; kiểm tra tên cột, dữ liệu thiếu, số lượng/giá, ngày giờ và địa chỉ.
+- 186.850 dòng đầu vào gồm 545 dòng trống, 355 tiêu đề lặp và 185.950 dòng hợp lệ.
+- Có 34 dòng thuộc năm 2020: giữ trong dữ liệu sạch, loại khỏi KPI năm 2019 theo ngày đặt hàng thực tế.
+- Giữ và đánh dấu 264 dòng trùng hoàn toàn vì chưa có khóa dòng đơn để xác nhận đó là lỗi.
+- Doanh thu = số lượng × đơn giá; tính tiền bằng **cent nguyên** để tránh sai số số thực. Các cột `_cents` trong bảng CSV cần chia 100 để đổi sang USD.
+- Số đơn là số Order ID duy nhất, không phải số dòng. Một mã đơn có thể chứa nhiều sản phẩm.
+- Thành phố đi kèm bang để tách Portland (OR) và Portland (ME).
+- Mỗi cặp sản phẩm khác nhau tính tối đa một lần trong một đơn; bổ sung support, confidence và lift.
+- Kiểm tra đối soát: doanh thu theo tháng, thành phố, giờ và sản phẩm đều bằng tổng năm; số đơn theo tháng và giờ bằng tổng số đơn.
 
-## C�ng c? v� k? thu?t
+## Công cụ và kỹ thuật
 
-X? ly nhi?u CSV; ki?m tra ch?t lu?ng d? li?u; `Decimal`, `datetime`, regex; `Counter`, `defaultdict`, `itertools.combinations`; t?ng h?p ch? ti�u; ph�n t�ch gi? h�ng; t?o b�o c�o HTML/SVG v� xu?t JSON/CSV.
+Xử lý nhiều CSV; kiểm tra chất lượng dữ liệu; `Decimal`, `datetime`, regex; `Counter`, `defaultdict`, `itertools.combinations`; tổng hợp chỉ tiêu; phân tích giỏ hàng; tạo báo cáo HTML/SVG và xuất JSON/CSV.
 
-## Gi?i h?n v� d? xu?t
+## Giới hạn và đề xuất
 
-D? li?u kh�ng c� gi� v?n, th�ng tin kh�ch h�ng, qu?ng c�o, ho�n tr? ho?c lu?t truy c?p. V� v?y chua th? t�nh l?i nhu?n, retention hay ROI. Gi? d?t h�ng gi? nguy�n theo ngu?n v� chua c� th�ng tin m�i gi?. C�c gi? cao di?m v� c?p mua k�m l� co s? d? xu?t th? nghi?m qu?ng c�o/bundle, chua ch?ng minh quan h? nh�n qu?.
+Dữ liệu không có giá vốn, thông tin khách hàng, quảng cáo, hoàn trả hoặc lượt truy cập. Vì vậy chưa thể tính lợi nhuận, retention hay ROI. Giờ đặt hàng giữ nguyên theo nguồn vì chưa có thông tin múi giờ. Các giờ cao điểm và cặp mua kèm là cơ sở đề xuất thử nghiệm quảng cáo/bundle, chưa chứng minh quan hệ nhân quả.
 
-## Tham kh?o
+## Tham khảo
 
-- B? d? li?u v� c�c c�u h?i kinh doanh du?c ph�t tri?n d?a tr�n project [Sales-Reporting](https://github.com/boringPpl/Sales-Reporting).
-
+- Bộ dữ liệu và các câu hỏi kinh doanh được phát triển dựa trên project [Sales-Reporting](https://github.com/boringPpl/Sales-Reporting).
