@@ -21,5 +21,3 @@ Phân tích 12 file CSV bán hàng để xem doanh thu theo tháng và thành ph
 4. Xem kết quả và biểu đồ ngay dưới từng ô trong notebook. Bản đã chạy cũng xem được trên GitHub.
 
 Doanh thu được tính bằng cent nguyên; số đơn là số `Order ID` duy nhất. Phạm vi năm 2019 lấy theo ngày đặt hàng thực tế. Mục 1 chỉ đọc và kiểm tra dữ liệu; các dòng hợp lệ được giữ nguyên để tính chỉ số ở mục 2.
-
-Nguồn dữ liệu tham khảo: [Sales-Reporting](https://github.com/boringPpl/Sales-Reporting).
