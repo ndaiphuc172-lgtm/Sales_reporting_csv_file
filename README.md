@@ -1,18 +1,25 @@
 # Sales Reporting 2019 — Python Mini Project
 
-Phân tích 12 file dữ liệu bán hàng năm 2019 nhằm đánh giá doanh thu, thời điểm đặt hàng và xu hướng mua sản phẩm cùng nhau.
-
-## Cấu trúc repo
+Phân tích 12 file CSV bán hàng để xem doanh thu theo tháng và thành phố, số đơn theo giờ, sản phẩm bán nhiều và các cặp sản phẩm thường được mua cùng.
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `data/sales2019_1.csv` đến `data/sales2019_12.csv` | 12 CSV dữ liệu gốc |
-| `report.ipynb` | Notebook độc lập, chứa đầy đủ mã xử lý, phân tích và biểu đồ đã chạy |
-| `README.md` | Hướng dẫn chạy
+| `data/sales2019_1.csv` đến `data/sales2019_12.csv` | Dữ liệu gốc của 12 tháng |
+| `report.ipynb` | Mã Python, kết quả in trực tiếp và năm biểu đồ Matplotlib |
+| `requirements.txt` | Thư viện để chạy notebook |
 
 ## Cách chạy
 
-1. Tải hoặc clone toàn bộ repo.
-2. Mở thư mục repo bằng VS Code, cài extension Python và Jupyter nếu chưa có.
-3. Mở `report.ipynb`, chọn Python 3.10 trở lên và nhấn **Run All**. 
+1. Tải hoặc clone repo và mở thư mục gốc bằng VS Code.
+2. Dùng Python 3.10 trở lên và cài các thư viện:
 
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+3. Mở `report.ipynb`, chọn kernel Python đã cài thư viện, rồi bấm **Run All**. Thư mục làm việc cần chứa `data/`.
+4. Xem kết quả và biểu đồ ngay dưới từng ô trong notebook. Bản đã chạy cũng xem được trên GitHub.
+
+Doanh thu được tính bằng cent nguyên; số đơn là số `Order ID` duy nhất. Phạm vi năm 2019 lấy theo ngày đặt hàng thực tế. Các dòng giống hệt nhau được đánh dấu để kiểm tra thay vì tự động xóa.
+
+Nguồn dữ liệu tham khảo: [Sales-Reporting](https://github.com/boringPpl/Sales-Reporting).
